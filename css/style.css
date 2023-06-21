@@ -4,36 +4,106 @@ html {
   font-size: 100%;
 }
 body {
-
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  color: #2a2a2a;
 }
 img {
   max-width: 100%;
+}
+a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+.sec-title {
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  color: #2a2a2a;
+  font-size: 0.7rem;
+  border: 1px solid #2a2a2a;
+  padding: 15px 35px;
+  margin-top: 20px;
 }
 
 /*-------------------------------------------
 Header
 -------------------------------------------*/
-
-
-
-/*-------------------------------------------
-Mainvisual
--------------------------------------------*/
-
-
-
-
-/*-------------------------------------------
-Index
--------------------------------------------*/
-
-
-
+#header {
+  height: 100vh;
+  background-image: url(../img/mainvisual.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 80px;
+}
+#header .site-title {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
 
 /*-------------------------------------------
-Image
+Magazine
 -------------------------------------------*/
+#magazine {
+  text-align: center;
+  margin-bottom: 80px;
+}
+#magazine .flex-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#magazine .flex-item .item {
+  position: relative;
+  width: 49%;
+}
+#magazine .flex-item .item .text {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  padding: 5% 0;
+  margin: 0 auto;
+}
+#magazine .flex-item .item .text .title {
+  font-size: 20px;
+}
 
+/*-------------------------------------------
+Fashion
+-------------------------------------------*/
+#fashion {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  background: url(../img/fashion.jpg) no-repeat center top/cover;
+  height: 500px;
+}
+
+/*-------------------------------------------
+Catalog & Antique
+-------------------------------------------*/
+.catalog-antique {
+  background-color: #f5f5f5;
+  padding: 60px 
+}
 
 
 
