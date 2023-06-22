@@ -26,6 +26,7 @@ li {
   margin: 0 auto;
 }
 .sec-title {
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 .btn {
@@ -102,27 +103,123 @@ Catalog & Antique
 -------------------------------------------*/
 .catalog-antique {
   background-color: #f5f5f5;
-  padding: 60px 
+  padding: 60px 0;
 }
-
-
-
-/*-------------------------------------------
-Detail
--------------------------------------------*/
-
-
-
+.catalog-antique .flex-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalog-antique .item {
+  width: 48%;
+  text-align: center;
+}
+.catalog-antique .item img {
+  width: 100%;
+}
+.catalog-antique .sec-title {
+  margin-bottom: 40px;
+}
+.catalog-antique .item p {
+  margin-bottom: 30px;
+  text-align: left;
+}
+.catalog-antique .item p:last-child {
+  margin-bottom: 0;
+}
 
 /*-------------------------------------------
 Footer
 -------------------------------------------*/
-
+#footer {
+  background-color: #333;
+  font-size: 0.7rem;
+}
+#footer .flex-item {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#footer .item {
+  width: 30%;
+  line-height: 2;
+}
+#footer .item:first-child {
+  padding: 60px 0;
+}
+#footer .item .title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#footer .copyright {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+#footer .item li::before {
+  content: "-";
+  margin-right: 5px;
+}
 
 /*-------------------------------------------
 SP
 -------------------------------------------*/
-@media screen and (max-width: px) {
-
+@media screen and (max-width: 896px) {
+  /*-------------------------------------------
+  Magazine
+  -------------------------------------------*/
+  #magazine .flex-item {
+    flex-direction: column;
+  }
+  #magazine .flex-item .item {
+    width: 100%;
+  }
+  #magazine .flex-item .item:first-child {
+    margin-bottom: 30px;
+  }
+  
+  /*-------------------------------------------
+  Fashion
+  -------------------------------------------*/
+  #fashion {
+    padding-top: 35px;
+    margin-bottom: 50px;
+  }
+  
+  /*-------------------------------------------
+  Catalog & Antique
+  -------------------------------------------*/
+  .catalog-antique {
+    padding: 30px 0;
+  }
+  .catalog-antique .flex-item {
+    flex-direction: column;
+  }
+  .catalog-antique .item {
+    width: 100%;
+  }
+  .catalog-antique .item:first-child {
+    margin-bottom: 60px;
+  }
+  
+  /*-------------------------------------------
+  Footer
+  -------------------------------------------*/
+  #footer .flex-item {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #footer .item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #footer .item:first-child {
+    text-align: center;
+    padding: 0;
+  }
 }
 
